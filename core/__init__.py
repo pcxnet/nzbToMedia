@@ -602,7 +602,7 @@ def configure_transcoder():
     SUBSDIR = CFG['Transcoder']['externalSubDir']
     VEXTENSION = CFG['Transcoder']['outputVideoExtension'].strip()
     VCODEC = CFG['Transcoder']['outputVideoCodec'].strip()
-    VCODEC_ALLOW = CFG['Transcoder']['VideoCodecAllow'].strip()
+    VCODEC_ALLOW = CFG['Transcoder']['VideoCodecAllow']
     if isinstance(VCODEC_ALLOW, str):
         VCODEC_ALLOW = VCODEC_ALLOW.split(',')
     if VCODEC_ALLOW == ['']:
@@ -626,7 +626,7 @@ def configure_transcoder():
         pass
     VRESOLUTION = CFG['Transcoder']['outputVideoResolution']
     ACODEC = CFG['Transcoder']['outputAudioCodec'].strip()
-    ACODEC_ALLOW = CFG['Transcoder']['AudioCodecAllow'].strip()
+    ACODEC_ALLOW = CFG['Transcoder']['AudioCodecAllow']
     if isinstance(ACODEC_ALLOW, str):
         ACODEC_ALLOW = ACODEC_ALLOW.split(',')
     if ACODEC_ALLOW == ['']:

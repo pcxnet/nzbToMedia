@@ -280,7 +280,7 @@ def build_commands(file, new_dir, movie_name, bitbucket):
             video_cmd.extend(['-crf', str(core.VCRF)])
         if core.VLEVEL:
             video_cmd.extend(['-level', str(core.VLEVEL)])
-        no_copy = ['-vf', '-r', '-crf', '-level', '-preset', '-b:v']
+        no_copy = ['-vf', '-r', '-b:v']
         if video_cmd[1] == 'copy' and any(i in video_cmd for i in no_copy):
             video_cmd[1] = core.VCODEC
         if core.VCODEC == 'copy':  # force copy. therefore ignore all other video transcoding.

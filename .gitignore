@@ -1,3 +1,4 @@
+*.cfg
 !.bumpversion.cfg
 *.cfg.old
 *.pyc
@@ -9,5 +10,6 @@
 /userscripts/
 /logs/
 /.idea/
+/.vscode/
 *.dist-info
 *.egg-info
